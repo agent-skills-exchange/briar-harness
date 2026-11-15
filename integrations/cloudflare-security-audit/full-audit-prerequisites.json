@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "document_kind": "unresolved-execution-prerequisites",
+  "feature": "full-audit",
+  "available": false,
+  "installable_dependency_manifest": false,
+  "upstream": {
+    "repository": "https://github.com/cloudflare/security-audit-skill",
+    "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+    "package_sha256": "36af2ef2ddabeca0bb9c033f0a4a01703f561556bb556e6dbe8f6b3f8d961cb2",
+    "licence": "MIT",
+    "evidence": ["SKILL.md:21-42", "SKILL.md:44-99", "VALIDATION-AND-REPORTING.md:114-115"]
+  },
+  "platforms": {
+    "verified": [],
+    "supported_execution_profiles": [],
+    "requires": "OS-enforced controls and descriptor-relative no-follow file operations, or equivalent race-safe APIs",
+    "non_posix_equivalence_verified": false
+  },
+  "host": {
+    "briar_runtime_required": false,
+    "skill_dependencies": [],
+    "required_capabilities": [
+      "parent-owned coordination and shared output files",
+      "isolated research and general subagent roles",
+      "fresh independent verification of candidate findings",
+      "read-only pinned target source access",
+      "per-agent scratch and parent-only retained artifacts"
+    ],
+    "verified_hosts": [],
+    "host_inference_credentials": "Provisioned by the selected agent host, not obtained from the skill"
+  },
+  "software": {
+    "report_validation": {
+      "runtime": "node",
+      "upstream_minimum_version": null,
+      "selected_version": null,
+      "entrypoints": ["validate-findings.cjs", "validate-coverage-ledger.cjs"],
+      "installation": "preinstalled only; no install or download authorised by this record"
+    },
+    "target_toolchain": {
+      "target_selected": false,
+      "resolved_inventory": null,
+      "required_evidence": ["exact installed toolchain identities", "target-specific transitive dependency locks or SBOM", "offline availability"],
+      "build_time_dependency_downloads_allowed": false
+    }
+  },
+  "target_execution": {
+    "enabled": false,
+    "source_inspection_read_only": true,
+    "requires_os_enforced_sandbox": true,
+    "external_network_allowed": false,
+    "local_network": "isolated loopback namespace only when required",
+    "environment": {
+      "initial": "empty",
+      "explicit_allowlist_required": true,
+      "values_non_secret": true,
+      "home_temporary_and_cache_roots": "assigned scratch only"
+    },
+    "filesystem": {
+      "target_and_toolchain": "read-only",
+      "writable_roots": ["assigned agent scratch"],
+      "hidden_from_target": ["retained artifacts", "other agent roots", "host home", "credentials", "host sockets", "shared services"]
+    },
+    "resource_limits": {
+      "required_dimensions": ["cpu", "memory", "processes", "file-size", "disk", "wall-clock"],
+      "selected_values": null,
+      "enforcement_verified": false,
+      "basis": "Pinned upstream SKILL.md:38; select and verify workload-specific values before target execution"
+    },
+    "safe_failure": "Do not execute target code; report the missing capability and needs-validation plan"
+  },
+  "artifact_promotion": {
+    "implementation_verified": false,
+    "parent_only": true,
+    "all_sandbox_processes_terminated_first": true,
+    "trusted_non_inheritable_root_descriptors_required": true,
+    "explicit_relative_file_allowlist_required": true,
+    "per_file_and_cumulative_byte_limits_required": true,
+    "selected_byte_limits": null,
+    "descriptor_relative_no_follow_traversal_required": true,
+    "source_nonblocking_regular_single_link_required": true,
+    "verified_size_and_identity_rechecked": true,
+    "destination_exclusive_regular_single_link_required": true,
+    "recursive_copy_glob_archive_extraction_allowed": false,
+    "failure": "Discard the entry; decisive evidence remains needs-validation"
+  },
+  "network_and_credentials": {
+    "target_external_destinations": [],
+    "target_credentials": [],
+    "fixtures": "dummy principals and secrets only",
+    "live_endpoint_probes_allowed": false
+  },
+  "unresolved": [
+    "independent disposition of blocking SkillSpector findings",
+    "supported host delegation and independent-verifier proof",
+    "selected platform, Node version and complete target toolchain inventory",
+    "OS sandbox implementation and enforced workload-specific limits",
+    "trusted race-safe artifact promotion and explicit file limits",
+    "current scoped workload identity, permission and revocation checks",
+    "actual host integration and representative full-audit acceptance"
+  ],
+  "activation_granted": false
+}

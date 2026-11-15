@@ -1,0 +1,2161 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "annotated-doc",
+      "name": "annotated-doc",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "8c24d70c5d9153d22123353a906042fd7603df2d15c2196290b0f8a962558c46"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-doc@0.0.5",
+      "type": "library",
+      "version": "0.0.5"
+    },
+    {
+      "bom-ref": "annotated-types",
+      "name": "annotated-types",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-types@0.8.0",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "bom-ref": "anthropic",
+      "name": "anthropic",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio<5,>=4.1.0\", \"docstring-parser<1,>=0.15\", \"httpx2<3,>=2.0.0\", \"jiter<1,>=0.4.0\", \"opentelemetry-api<2,>=1.1.0\", \"pydantic<3,>=1.10.0\", \"sniffio<2,>=1\", \"typing-extensions<5,>=4.14\", \"aiohttp<4,>=3.10.0; extra == 'aiohttp'\", \"boto3<2,>=1.28.57; extra == 'aws'\", \"botocore<2,>=1.31.57; extra == 'aws'\", \"boto3<2,>=1.28.57; extra == 'bedrock'\", \"botocore<2,>=1.31.57; extra == 'bedrock'\", \"google-auth[requests]<3,>=2; extra == 'google-cloud'\", \"mcp<3,>=1.0; (python_version >= '3.10') and extra == 'mcp'\", \"google-auth[requests]<3,>=2; extra == 'vertex'\", \"standardwebhooks<2,>=1.0.1; extra == 'webhooks'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "d57699f917285389689c7a2984ea22ac330f85017a89d3a1853a6e0410f48e71"
+        }
+      ],
+      "purl": "pkg:pypi/anthropic@2.3.0",
+      "type": "library",
+      "version": "2.3.0"
+    },
+    {
+      "bom-ref": "anyio",
+      "name": "anyio",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"exceptiongroup>=1.0.2; python_version < \\\"3.11\\\"\", \"idna>=2.8\", \"typing_extensions>=4.16.0; python_version < \\\"3.15\\\"\", \"trio>=0.32.0; extra == \\\"trio\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "043aecb571af7189e8a6c528f5d8e32545f1b2cdfaaf761d51e6d5b67ea3ca81"
+        }
+      ],
+      "purl": "pkg:pypi/anyio@4.15.1",
+      "type": "library",
+      "version": "4.15.1"
+    },
+    {
+      "bom-ref": "blockbuster",
+      "name": "blockbuster",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"forbiddenfruit>=0.1.4; implementation_name == 'cpython'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "6954bd59d854a6ed52907d3dab81a0b0ff4ce0d209364074fe96476e9c3dac90"
+        }
+      ],
+      "purl": "pkg:pypi/blockbuster@1.5.29",
+      "type": "library",
+      "version": "1.5.29"
+    },
+    {
+      "bom-ref": "boto3",
+      "name": "boto3",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"botocore (<1.44.0,>=1.43.123)\", \"jmespath (<2.0.0,>=0.7.1)\", \"s3transfer (<0.20.0,>=0.19.0)\", \"botocore[crt] (<2.0a0,>=1.21.0) ; extra == 'crt'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">= 3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "c44b6135d591b9e16d6d41a2d067e84f389e8ac2adca219a50dc61bb5539b06b"
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.43.123",
+      "type": "library",
+      "version": "1.43.123"
+    },
+    {
+      "bom-ref": "botocore",
+      "name": "botocore",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"jmespath (<2.0.0,>=0.7.1)\", \"python-dateutil (<3.0.0,>=2.1)\", \"urllib3 (!=2.2.0,<3,>=1.25.4)\", \"awscrt (==0.38.0) ; extra == 'crt'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">= 3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "4eee9e53054cc4c67cf937930a6c1ba16bf9b54d529e40d7164869cb7221a16a"
+        }
+      ],
+      "purl": "pkg:pypi/botocore@1.43.123",
+      "type": "library",
+      "version": "1.43.123"
+    },
+    {
+      "bom-ref": "certifi",
+      "name": "certifi",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "e463e38f7fe7da36a11e6d3fecc5dfa5b97be8c8022620400750d79ae7d842bc"
+        }
+      ],
+      "purl": "pkg:pypi/certifi@2026.10.23",
+      "type": "library",
+      "version": "2026.10.23"
+    },
+    {
+      "bom-ref": "cffi",
+      "name": "cffi",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"pycparser; implementation_name != \\\"PyPy\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "558bafb9093a8e790175d9ecff9688382981d744877dad86fd6770db0f4dc918"
+        }
+      ],
+      "purl": "pkg:pypi/cffi@2.1.1",
+      "type": "library",
+      "version": "2.1.1"
+    },
+    {
+      "bom-ref": "charset-normalizer",
+      "name": "charset-normalizer",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "89ce6362bb7be88558f4be99a98f5d1b4da93d19cd0323e5ee0bac05cf883dfb"
+        }
+      ],
+      "purl": "pkg:pypi/charset-normalizer@3.5.2",
+      "type": "library",
+      "version": "3.5.2"
+    },
+    {
+      "bom-ref": "click",
+      "name": "click",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "e87bce0bd194de70dfb8e708e0a6b0483009f25611804eaf87bfeb63e6c20501"
+        }
+      ],
+      "purl": "pkg:pypi/click@8.5.0",
+      "type": "library",
+      "version": "8.5.0"
+    },
+    {
+      "bom-ref": "cloudpickle",
+      "name": "cloudpickle",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721"
+        }
+      ],
+      "purl": "pkg:pypi/cloudpickle@3.1.2",
+      "type": "library",
+      "version": "3.1.2"
+    },
+    {
+      "bom-ref": "croniter",
+      "name": "croniter",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"python-dateutil\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "75cfeb8f533984a6adcc3a2f842f98b5a5b74f7ce97eeddf7d5aa0ff41c7577d"
+        }
+      ],
+      "purl": "pkg:pypi/croniter@6.2.4",
+      "type": "library",
+      "version": "6.2.4"
+    },
+    {
+      "bom-ref": "cryptography",
+      "name": "cryptography",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"cffi>=2.0.0 ; platform_python_implementation != 'PyPy'\", \"typing-extensions>=4.13.2 ; python_full_version < '3.11'\", \"bcrypt>=3.1.5 ; extra == 'ssh'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9, !=3.9.0, !=3.9.1"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee"
+        }
+      ],
+      "purl": "pkg:pypi/cryptography@50.0.2",
+      "type": "library",
+      "version": "50.0.2"
+    },
+    {
+      "bom-ref": "distro",
+      "name": "distro",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.6"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "31632ab2de5591131091b3397bdcdf797718579d85a75186f06839dd0c09e81d"
+        }
+      ],
+      "purl": "pkg:pypi/distro@1.9.0",
+      "type": "library",
+      "version": "1.9.0"
+    },
+    {
+      "bom-ref": "docstring-parser",
+      "name": "docstring-parser",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"pre-commit>=2.16.0; (python_version >= '3.9') and extra == 'dev'\", \"pydoctor>=25.4.0; extra == 'dev'\", \"pytest; extra == 'dev'\", \"pydoctor>=25.4.0; extra == 'docs'\", \"pytest; extra == 'test'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "cbc42027997fd4b194ae5fd064a4d1e57b92976941d0c26d369561a7c016a333"
+        }
+      ],
+      "purl": "pkg:pypi/docstring-parser@0.18.0",
+      "type": "library",
+      "version": "0.18.0"
+    },
+    {
+      "bom-ref": "forbiddenfruit",
+      "name": "forbiddenfruit",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ""
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "d801d749156df05ed65ee8853cfeec9b558888a35b01ba6e946ebcfff321ee7d"
+        }
+      ],
+      "purl": "pkg:pypi/forbiddenfruit@0.1.4",
+      "type": "library",
+      "version": "0.1.4"
+    },
+    {
+      "bom-ref": "googleapis-common-protos",
+      "name": "googleapis-common-protos",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"protobuf<8.0.0,>=6.33.5\", \"grpcio<2.0.0,>=1.59.0; extra == \\\"grpc\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "39e50b34a7deced82bd1f36bb9fa2e5f79954f1ecc696aeffa42aa3e9f1169b5"
+        }
+      ],
+      "purl": "pkg:pypi/googleapis-common-protos@1.76.0",
+      "type": "library",
+      "version": "1.76.0"
+    },
+    {
+      "bom-ref": "grpcio",
+      "name": "grpcio",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions~=4.12\", \"grpcio-tools>=1.81.1; extra == \\\"protobuf\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "6d038b4a919aeaf69f24e83869402f1937c70b2b7e4a731c5fa5cb50659edea6"
+        }
+      ],
+      "purl": "pkg:pypi/grpcio@1.81.1",
+      "type": "library",
+      "version": "1.81.1"
+    },
+    {
+      "bom-ref": "grpcio-health-checking",
+      "name": "grpcio-health-checking",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"protobuf<7.0.0,>=6.33.5\", \"grpcio>=1.81.1\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "5cd8530fe05e9ea99a54c7789d86fb74dc01cc35ad033a7c6cf0bc53cbe51a13"
+        }
+      ],
+      "purl": "pkg:pypi/grpcio-health-checking@1.81.1",
+      "type": "library",
+      "version": "1.81.1"
+    },
+    {
+      "bom-ref": "grpcio-tools",
+      "name": "grpcio-tools",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"protobuf<7.0.0,>=6.33.5\", \"grpcio>=1.81.1\", \"setuptools>=77.0.1\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "4bde28395bdbaa7ad5f6a888fb7e2403ea5a683b1005fa52885d4dbbdcc02013"
+        }
+      ],
+      "purl": "pkg:pypi/grpcio-tools@1.81.1",
+      "type": "library",
+      "version": "1.81.1"
+    },
+    {
+      "bom-ref": "h11",
+      "name": "h11",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64"
+        }
+      ],
+      "purl": "pkg:pypi/h11@0.16.0",
+      "type": "library",
+      "version": "0.16.0"
+    },
+    {
+      "bom-ref": "httpcore",
+      "name": "httpcore",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"certifi\", \"h11>=0.16\", \"anyio<5.0,>=4.0; extra == 'asyncio'\", \"h2<5,>=3; extra == 'http2'\", \"socksio==1.*; extra == 'socks'\", \"trio<1.0,>=0.22.0; extra == 'trio'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21"
+        }
+      ],
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "type": "library",
+      "version": "1.0.9"
+    },
+    {
+      "bom-ref": "httpcore2",
+      "name": "httpcore2",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"h11>=0.16\", \"truststore>=0.10\", \"anyio<5.0,>=4.5.0; extra == 'asyncio'\", \"h2<5,>=3; extra == 'http2'\", \"socksio==1.*; extra == 'socks'\", \"trio<1.0,>=0.34.0; extra == 'trio'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "c073bd68b2bd543fbc2bab3763b42ed1e70666536d32c1bf39ef2764fd50b0a4"
+        }
+      ],
+      "purl": "pkg:pypi/httpcore2@2.16.0",
+      "type": "library",
+      "version": "2.16.0"
+    },
+    {
+      "bom-ref": "httptools",
+      "name": "httptools",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "8a743396f45465204e2b44b43cb57ec4a343c423f52604bbaf1777fd438698c9"
+        }
+      ],
+      "purl": "pkg:pypi/httptools@0.9.0",
+      "type": "library",
+      "version": "0.9.0"
+    },
+    {
+      "bom-ref": "httpx",
+      "name": "httpx",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio\", \"certifi\", \"httpcore==1.*\", \"idna\", \"brotli; (platform_python_implementation == 'CPython') and extra == 'brotli'\", \"brotlicffi; (platform_python_implementation != 'CPython') and extra == 'brotli'\", \"click==8.*; extra == 'cli'\", \"pygments==2.*; extra == 'cli'\", \"rich<14,>=10; extra == 'cli'\", \"h2<5,>=3; extra == 'http2'\", \"socksio==1.*; extra == 'socks'\", \"zstandard>=0.18.0; extra == 'zstd'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25"
+        }
+      ],
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library",
+      "version": "0.28.1"
+    },
+    {
+      "bom-ref": "httpx2",
+      "name": "httpx2",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio>=4.10; sys_platform != 'emscripten'\", \"httpcore2==2.16.0; sys_platform != 'emscripten'\", \"httpx2-jsfetch; sys_platform == 'emscripten' and python_version >= '3.12'\", \"idna>=3.18\", \"truststore>=0.10; sys_platform != 'emscripten'\", \"typing-extensions>=4.5.0; python_version < '3.13'\", \"brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'\", \"brotlicffi>=1.2.0.2; (platform_python_implementation != 'CPython') and extra == 'brotli'\", \"click>=8.4.2; extra == 'cli'\", \"pygments==2.*; extra == 'cli'\", \"rich<16,>=10; extra == 'cli'\", \"h2<5,>=3; extra == 'http2'\", \"socksio==1.*; extra == 'socks'\", \"wsproto>=1.2; extra == 'ws'\", \"backports-zstd>=1.0.0; (python_version <= '3.13') and extra == 'zstd'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "192f20046200ff50911a7278c21dfbee1e1a4c6fa7943227afe9231d28defc3f"
+        }
+      ],
+      "purl": "pkg:pypi/httpx2@2.16.0",
+      "type": "library",
+      "version": "2.16.0"
+    },
+    {
+      "bom-ref": "idna",
+      "name": "idna",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"ruff >= 0.16.0 ; extra == \\\"all\\\"\", \"mypy >= 1.11.2 ; extra == \\\"all\\\"\", \"ty >= 0.0.37 ; extra == \\\"all\\\"\", \"pytest >= 8.3.2 ; extra == \\\"all\\\"\", \"hypothesis >= 6.141.1 ; extra == \\\"all\\\"\", \"coverage >= 7.10.0 ; extra == \\\"all\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85"
+        }
+      ],
+      "purl": "pkg:pypi/idna@3.20",
+      "type": "library",
+      "version": "3.20"
+    },
+    {
+      "bom-ref": "jiter",
+      "name": "jiter",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "605996e695df21e5ed5275c832a7cca52635d45fac23825233382012b5acfa5c"
+        }
+      ],
+      "purl": "pkg:pypi/jiter@0.18.0",
+      "type": "library",
+      "version": "0.18.0"
+    },
+    {
+      "bom-ref": "jmespath",
+      "name": "jmespath",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "81181e9a312f1b87e5be7c8376c57b0e8c962ba524a25a313d43dc2e2d3984f3"
+        }
+      ],
+      "purl": "pkg:pypi/jmespath@1.1.0",
+      "type": "library",
+      "version": "1.1.0"
+    },
+    {
+      "bom-ref": "jsonpatch",
+      "name": "jsonpatch",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"jsonpointer>=3.2\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "f8fdfa8679cff1b9fe0618e3da3440565e719b3ed71c4680fe4933f8378093ad"
+        }
+      ],
+      "purl": "pkg:pypi/jsonpatch@1.38",
+      "type": "library",
+      "version": "1.38"
+    },
+    {
+      "bom-ref": "jsonpointer",
+      "name": "jsonpointer",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "73bbf2049c9c96505efca62787338f88e21ace615652c85d07930a34f81d725d"
+        }
+      ],
+      "purl": "pkg:pypi/jsonpointer@3.6",
+      "type": "library",
+      "version": "3.6"
+    },
+    {
+      "bom-ref": "jsonschema-rs",
+      "name": "jsonschema-rs",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"fastjsonschema>=2.20.0 ; extra == 'bench'\", \"jsonschema>=4.23.0 ; extra == 'bench'\", \"pytest-benchmark>=4.0.0 ; extra == 'bench'\", \"flask>=2.2.5 ; extra == 'tests'\", \"hypothesis>=6.79.4 ; extra == 'tests'\", \"pytest>=7.4.4 ; extra == 'tests'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "2f844531d6ebfed2e41f6ea7cc98dbca9b41317ae62462fa403f10f3e4574878"
+        }
+      ],
+      "purl": "pkg:pypi/jsonschema-rs@0.44.1",
+      "type": "library",
+      "version": "0.44.1"
+    },
+    {
+      "bom-ref": "langchain-anthropic",
+      "name": "langchain-anthropic",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anthropic>=0.120.0\", \"langchain-core<2.0.0,>=1.6.10\", \"pydantic>=2.7.4\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "<4.0.0,>=3.10.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "0229f9fdffba3a7d0961de6618e221f44c8102796dc8d410b2c35defc7ceefe0"
+        }
+      ],
+      "purl": "pkg:pypi/langchain-anthropic@1.7.7",
+      "type": "library",
+      "version": "1.7.7"
+    },
+    {
+      "bom-ref": "langchain-aws",
+      "name": "langchain-aws",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"boto3>=1.43.64\", \"langchain-core>=1.6.10\", \"numpy>=1.0.0\", \"pydantic>=2.10.6\", \"anthropic[bedrock]>=0.95.0; extra == 'anthropic'\", \"aws-bedrock-token-generator>=1.1.0; extra == 'anthropic'\", \"langchain-anthropic>=1.7.6; extra == 'anthropic'\", \"aws-sdk-bedrock-runtime>=0.10; (python_version >= '3.12') and extra == 'nova-sonic'\", \"smithy-http[awscrt]; (python_version >= '3.12') and extra == 'nova-sonic'\", \"aws-bedrock-token-generator>=1.1.0; extra == 'openai'\", \"langchain-openai>=1.0.0; extra == 'openai'\", \"openai>=1.106.0; extra == 'openai'\", \"beautifulsoup4>=4.13.4; extra == 'tools'\", \"bedrock-agentcore>=1.23.0; (python_version >= '3.10') and extra == 'tools'\", \"playwright>=1.53.0; extra == 'tools'\", \"valkey-glide-sync>=2.5.2; extra == 'valkey'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "40837844795ded3bb42ca72a5ec74cbb0ff55d66421551b27ac60892c4a2c754"
+        }
+      ],
+      "purl": "pkg:pypi/langchain-aws@1.9.1",
+      "type": "library",
+      "version": "1.9.1"
+    },
+    {
+      "bom-ref": "langchain-core",
+      "name": "langchain-core",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"certifi>=2026.10.19\", \"httpx>=0.23.0\", \"jsonpatch>=1.33.0\", \"langchain-protocol>=0.0.20\", \"langsmith<1.0.0,>=0.14.9\", \"packaging>=23.2.0\", \"pydantic<3.0.0,>=2.7.4\", \"pyyaml>=5.3.0\", \"tenacity!=8.4.0,>=8.1.0\", \"typing-extensions>=4.7.0\", \"uuid-utils>=0.12.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "<4.0.0,>=3.10.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fe778ebb823f27acca4e01548f006db33ef72abe24084ba37f44d2a083885c34"
+        }
+      ],
+      "purl": "pkg:pypi/langchain-core@1.7.3",
+      "type": "library",
+      "version": "1.7.3"
+    },
+    {
+      "bom-ref": "langchain-openai",
+      "name": "langchain-openai",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"certifi>=2024.6.2\", \"langchain-core<2.0.0,>=1.7.0\", \"openai>=2.45.0\", \"tiktoken>=0.7.0\", \"aiohttp>=3.11.0; extra == 'azure-identity'\", \"azure-identity>=1.25.0; extra == 'azure-identity'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "<4.0.0,>=3.10.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "16180c5ed82f795c1ad4725096ef68ade126bf07987cc0bbc677b81639f65de9"
+        }
+      ],
+      "purl": "pkg:pypi/langchain-openai@1.7.3",
+      "type": "library",
+      "version": "1.7.3"
+    },
+    {
+      "bom-ref": "langchain-protocol",
+      "name": "langchain-protocol",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions<5.0.0,>=4.13.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "<4.0.0,>=3.10.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "18e3ee4b2dd8feefab5c13d254efae6bbfec0c7d793b2422fac5ec3c1c0c15d9"
+        }
+      ],
+      "purl": "pkg:pypi/langchain-protocol@0.0.20",
+      "type": "library",
+      "version": "0.0.20"
+    },
+    {
+      "bom-ref": "langgraph",
+      "name": "langgraph",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"langchain-core<2,>=1.4.7\", \"langgraph-checkpoint<5.0.0,>=4.3.0\", \"langgraph-prebuilt<1.2.0,>=1.1.0\", \"langgraph-sdk<0.5.0,>=0.4.6\", \"pydantic>=2.7.4\", \"xxhash>=3.5.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "45dc20b0de6036b8c7d3b11dab9508e2a397a25ea9756a8ffa1ccb61f49ec095"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph@1.2.19",
+      "type": "library",
+      "version": "1.2.19"
+    },
+    {
+      "bom-ref": "langgraph-api",
+      "name": "langgraph-api",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio>=4.14.2\", \"cloudpickle>=3.0.0\", \"cryptography>=50.0.0\", \"grpcio-health-checking<1.82.0,>=1.81.0\", \"grpcio-tools==1.81.1\", \"grpcio<1.82.0,>=1.81.0\", \"httptools>=0.5.0; platform_system != 'Windows'\", \"httpx>=0.25.0\", \"jsonschema-rs<0.45,>=0.20.0\", \"langchain-core>=0.3.64\", \"langchain-protocol<0.1,>=0.0.18\", \"langgraph-checkpoint<5,>=3.0.1\", \"langgraph-runtime-inmem<0.38.0.dev0,>=0.37.0.dev0\", \"langgraph-sdk>=0.4.4\", \"langgraph<2,>=0.4.10\", \"langsmith[otel]>=0.6.3\", \"opentelemetry-api>=0.0.1\", \"opentelemetry-exporter-otlp-proto-http>=0.0.1\", \"opentelemetry-exporter-prometheus<0.67,>=0.63b1\", \"opentelemetry-sdk>=0.0.1\", \"orjson>=3.9.7\", \"prometheus-client>=0.0.1\", \"protobuf<7.0.0,>=6.32.1\", \"pyjwt>=2.15.0\", \"sse-starlette<4.0.0,>=2.1.3\", \"starlette>=1.3.1\", \"structlog<26,>=24.1.0\", \"tenacity>=8.0.0\", \"truststore>=0.1\", \"uuid-utils>=0.16.2\", \"uvicorn>=0.29.0\", \"uvloop>=0.18.0; platform_system != 'Windows'\", \"watchfiles>=0.13\", \"websockets>=13.0\", \"zstandard>=0.23.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "0c54d6941f3e3799678a9660c4c7db0a3c4479a56f54aa0e8355351ebecb7990"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-api@0.17.0",
+      "type": "library",
+      "version": "0.17.0"
+    },
+    {
+      "bom-ref": "langgraph-checkpoint",
+      "name": "langgraph-checkpoint",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"langchain-core>=0.2.38\", \"ormsgpack>=1.12.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "9e59af41fb620215449b7c13fdb27f3e001379dfe03ca2d799781d29e816c226"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-checkpoint@4.3.1",
+      "type": "library",
+      "version": "4.3.1"
+    },
+    {
+      "bom-ref": "langgraph-cli",
+      "name": "langgraph-cli",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"click>=8.1.7\", \"httpx>=0.24.0\", \"langgraph-sdk>=0.1.0; python_version >= '3.11'\", \"pathspec>=0.11.0\", \"python-dotenv>=0.8.0\", \"tomli>=2.0.1; python_version < '3.11'\", \"langgraph-api<1.0.0,>=0.5.35; (python_version >= '3.11') and extra == 'inmem'\", \"langgraph-runtime-inmem>=0.7; (python_version >= '3.11') and extra == 'inmem'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "28f9d434277afff914e0d1fa8924208207eb263a5311dc4955994947849ecbdc"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-cli@0.4.40",
+      "type": "library",
+      "version": "0.4.40"
+    },
+    {
+      "bom-ref": "langgraph-prebuilt",
+      "name": "langgraph-prebuilt",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"langchain-core>=1.3.1\", \"langgraph-checkpoint<5.0.0,>=2.1.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "0c378432b6201dcf4b6641e642ce9f03e353515a155f15501a91fa7cdd401496"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-prebuilt@1.1.1",
+      "type": "library",
+      "version": "1.1.1"
+    },
+    {
+      "bom-ref": "langgraph-runtime-inmem",
+      "name": "langgraph-runtime-inmem",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"blockbuster<2.0.0,>=1.5.24\", \"croniter>=1.0.1\", \"langgraph-checkpoint<5,>=3\", \"langgraph<2,>=0.4.10\", \"sse-starlette>=2\", \"starlette>=1.3.1\", \"structlog>23\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "319e4e604e4f7bc0bb02c7e0fe22ba171b768d3a0f36a241768e1cf35dbf3c1e"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-runtime-inmem@0.37.0",
+      "type": "library",
+      "version": "0.37.0"
+    },
+    {
+      "bom-ref": "langgraph-sdk",
+      "name": "langgraph-sdk",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"httpx>=0.25.2\", \"langchain-core<2,>=1.4.0\", \"langchain-protocol>=0.0.15\", \"orjson>=3.11.5\", \"websockets>=14\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "7e707f60b946e7a2c1229694da800bb66cb791d7cc0b8cbf8756b2dc75d023b8"
+        }
+      ],
+      "purl": "pkg:pypi/langgraph-sdk@0.4.11",
+      "type": "library",
+      "version": "0.4.11"
+    },
+    {
+      "bom-ref": "langsmith",
+      "name": "langsmith",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio<5,>=3.5.0\", \"distro<2,>=1.7.0\", \"httpx2<3,>=2\", \"orjson>=3.9.14; platform_python_implementation != 'PyPy'\", \"packaging>=23.2\", \"pydantic<3,>=2\", \"requests-toolbelt>=1.0.0\", \"requests>=2.0.0\", \"sniffio\", \"typing-extensions<5,>=4.14\", \"uuid-utils<1.0,>=0.12.0\", \"websockets>=15.0\", \"xxhash>=3.0.0\", \"zstandard>=0.23.0\", \"aiohttp<4,>=3.14.3; extra == 'aiohttp'\", \"httpx-aiohttp>=0.1.9; extra == 'aiohttp'\", \"claude-agent-sdk>=0.1.0; (python_version >= '3.10') and extra == 'claude-agent-sdk'\", \"google-genai>=1.75; extra == 'gemini-live'\", \"google-adk>=1.0.0; extra == 'google-adk'\", \"wrapt>=1.16.0; extra == 'google-adk'\", \"google-adk>=2.3.0; extra == 'google-adk-live'\", \"langsmith-pyo3>=0.1.0rc2; extra == 'langsmith-pyo3'\", \"cachetools>=5.0.0; extra == 'livekit'\", \"livekit-agents>=1.6; extra == 'livekit'\", \"opentelemetry-api>=1.30.0; extra == 'livekit'\", \"opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == 'livekit'\", \"opentelemetry-sdk>=1.30.0; extra == 'livekit'\", \"openai-agents>=0.0.3; extra == 'openai-agents'\", \"openai-agents>=0.0.3; extra == 'openai-realtime'\", \"openai>=1.50; extra == 'openai-realtime'\", \"opentelemetry-api>=1.30.0; extra == 'otel'\", \"opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == 'otel'\", \"opentelemetry-sdk>=1.30.0; extra == 'otel'\", \"cachetools>=5.0.0; extra == 'pipecat'\", \"opentelemetry-api>=1.30.0; extra == 'pipecat'\", \"opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == 'pipecat'\", \"opentelemetry-sdk>=1.30.0; extra == 'pipecat'\", \"pipecat-ai>=1.0; (python_version >= '3.11') and extra == 'pipecat'\", \"pytest>=7.0.0; extra == 'pytest'\", \"rich>=13.9.4; extra == 'pytest'\", \"vcrpy>=7.0.0; extra == 'pytest'\", \"pyjwt[crypto]>=2.8.0; extra == 'sandbox-auth'\", \"opentelemetry-api>=1.30.0; extra == 'strands-agents'\", \"opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == 'strands-agents'\", \"opentelemetry-sdk>=1.30.0; extra == 'strands-agents'\", \"strands-agents-tools>=0.2.0; extra == 'strands-agents'\", \"strands-agents>=0.1.0; extra == 'strands-agents'\", \"vcrpy>=7.0.0; extra == 'vcr'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "d6d6f76ea46fdfc5666af883fa28f80ed3c5e963909973ce09e9158894ae93be"
+        }
+      ],
+      "purl": "pkg:pypi/langsmith@0.14.16",
+      "type": "library",
+      "version": "0.14.16"
+    },
+    {
+      "bom-ref": "markdown-it-py",
+      "name": "markdown-it-py",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"mdurl~=0.1\", \"psutil ; extra == \\\"benchmarking\\\"\", \"pytest ; extra == \\\"benchmarking\\\"\", \"pytest-benchmark ; extra == \\\"benchmarking\\\"\", \"commonmark~=0.9 ; extra == \\\"compare\\\"\", \"markdown~=3.4 ; extra == \\\"compare\\\"\", \"mistletoe~=1.0 ; extra == \\\"compare\\\"\", \"mistune~=3.0 ; extra == \\\"compare\\\"\", \"panflute~=2.3 ; extra == \\\"compare\\\"\", \"markdown-it-pyrs ; extra == \\\"compare\\\"\", \"linkify-it-py>=1,<3 ; extra == \\\"linkify\\\"\", \"mdit-py-plugins>=0.5.0 ; extra == \\\"plugins\\\"\", \"gprof2dot ; extra == \\\"profiling\\\"\", \"mdit-py-plugins>=0.5.0 ; extra == \\\"rtd\\\"\", \"myst-parser ; extra == \\\"rtd\\\"\", \"pyyaml ; extra == \\\"rtd\\\"\", \"sphinx ; extra == \\\"rtd\\\"\", \"sphinx-copybutton ; extra == \\\"rtd\\\"\", \"sphinx-design ; extra == \\\"rtd\\\"\", \"sphinx-book-theme~=1.0 ; extra == \\\"rtd\\\"\", \"jupyter_sphinx ; extra == \\\"rtd\\\"\", \"ipykernel ; extra == \\\"rtd\\\"\", \"coverage ; extra == \\\"testing\\\"\", \"pytest ; extra == \\\"testing\\\"\", \"pytest-cov ; extra == \\\"testing\\\"\", \"pytest-regressions ; extra == \\\"testing\\\"\", \"pytest-timeout ; extra == \\\"testing\\\"\", \"requests ; extra == \\\"testing\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c"
+        }
+      ],
+      "purl": "pkg:pypi/markdown-it-py@4.2.0",
+      "type": "library",
+      "version": "4.2.0"
+    },
+    {
+      "bom-ref": "mdurl",
+      "name": "mdurl",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d"
+        }
+      ],
+      "purl": "pkg:pypi/mdurl@0.1.2",
+      "type": "library",
+      "version": "0.1.2"
+    },
+    {
+      "bom-ref": "numpy",
+      "name": "numpy",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.12"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "e2b909d6a37d76c2bc130f528d7fed0c517322bce16dc7846b6a6df30e200403"
+        }
+      ],
+      "purl": "pkg:pypi/numpy@2.5.4",
+      "type": "library",
+      "version": "2.5.4"
+    },
+    {
+      "bom-ref": "openai",
+      "name": "openai",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio<5,>=4.10.0\", \"httpx2<3,>=2.12.0\", \"jiter<1,>=0.16.0\", \"pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,<3,>=1.10.13\", \"sniffio\", \"typing-extensions<5,>=4.14\", \"aiohttp>=3.14.3; extra == 'aiohttp'\", \"botocore<2,>=1.40.0; extra == 'bedrock'\", \"urllib3<3,>=2.7.0; extra == 'bedrock'\", \"numpy>=1; extra == 'datalib'\", \"pandas>=1.2.3; extra == 'datalib'\", \"websockets<16,>=13; extra == 'realtime'\", \"google-auth[requests]<3,>=2.36; extra == 'vertex'\", \"numpy>=2.0.2; extra == 'voice-helpers'\", \"sounddevice>=0.5.1; extra == 'voice-helpers'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "c605337e9528b096efc2fb37c40228e8beebb4daa954102cc131fdac45c2b279"
+        }
+      ],
+      "purl": "pkg:pypi/openai@3.42.0",
+      "type": "library",
+      "version": "3.42.0"
+    },
+    {
+      "bom-ref": "opentelemetry-api",
+      "name": "opentelemetry-api",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions>=4.5.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "aa93f63be0d6d1f662966e67b22a77c0d9966752e3a32ad87c1347f595cea7cb"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-api@1.45.2",
+      "type": "library",
+      "version": "1.45.2"
+    },
+    {
+      "bom-ref": "opentelemetry-exporter-http-transport",
+      "name": "opentelemetry-exporter-http-transport",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-api~=1.15\", \"requests~=2.25; extra == 'requests'\", \"urllib3>=1.26; extra == 'urllib3'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "bbe51271b2b8e4cc2178f091ca5d5044f0590ab335555e4f8bcc68a1594574fe"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-exporter-http-transport@0.66b2",
+      "type": "library",
+      "version": "0.66b2"
+    },
+    {
+      "bom-ref": "opentelemetry-exporter-otlp-common",
+      "name": "opentelemetry-exporter-otlp-common",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-sdk~=1.45.2\", \"opentelemetry-exporter-http-transport==0.66b2; extra == 'http'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "e977b62c748863cb42a221a8c152abaa40e0a36c95d03ca6c4d274dd45580171"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-common@0.66b2",
+      "type": "library",
+      "version": "0.66b2"
+    },
+    {
+      "bom-ref": "opentelemetry-exporter-otlp-proto-common",
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-proto==1.45.2\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "483d6be95d4a96b9073cda38989612b93d632ae212d679cd29577e6223a4964b"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-common@1.45.2",
+      "type": "library",
+      "version": "1.45.2"
+    },
+    {
+      "bom-ref": "opentelemetry-exporter-otlp-proto-http",
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"googleapis-common-protos~=1.52\", \"opentelemetry-api~=1.15\", \"opentelemetry-exporter-http-transport[requests]==0.66b2\", \"opentelemetry-exporter-otlp-common==0.66b2\", \"opentelemetry-exporter-otlp-proto-common==1.45.2\", \"opentelemetry-proto==1.45.2\", \"opentelemetry-sdk~=1.45.2\", \"requests~=2.7\", \"typing-extensions>=4.5.0\", \"opentelemetry-exporter-credential-provider-gcp>=0.59b0; extra == 'gcp-auth'\", \"opentelemetry-exporter-http-transport[requests]==0.66b2; extra == 'requests'\", \"requests~=2.7; extra == 'requests'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "4dd7b27bb38dc23dd7de70e2d8e9135c8a1dbcabda501a554b7fc45f2d27374c"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-http@1.45.2",
+      "type": "library",
+      "version": "1.45.2"
+    },
+    {
+      "bom-ref": "opentelemetry-exporter-prometheus",
+      "name": "opentelemetry-exporter-prometheus",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-api~=1.12\", \"opentelemetry-sdk~=1.45.2\", \"prometheus-client<1.0.0,>=0.5.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "cc2a6e0a7e510c934b15b3318e643b8d07365ba290f0d814f44e2ff78a176a67"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-exporter-prometheus@0.66b2",
+      "type": "library",
+      "version": "0.66b2"
+    },
+    {
+      "bom-ref": "opentelemetry-proto",
+      "name": "opentelemetry-proto",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"protobuf<8.0,>=5.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "8bfa21831b88bfb307b8ccd9ce54359ab1954796cdaa9d167fb1177669c0bf97"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-proto@1.45.2",
+      "type": "library",
+      "version": "1.45.2"
+    },
+    {
+      "bom-ref": "opentelemetry-sdk",
+      "name": "opentelemetry-sdk",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-api==1.45.2\", \"opentelemetry-semantic-conventions==0.66b2\", \"typing-extensions>=4.5.0\", \"opentelemetry-configuration==0.66b2; extra == 'file-configuration'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "97f0b558caae567c607dc5b53fc755deb2d0e305fe08093bb8d6c59ed55aa3e4"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-sdk@1.45.2",
+      "type": "library",
+      "version": "1.45.2"
+    },
+    {
+      "bom-ref": "opentelemetry-semantic-conventions",
+      "name": "opentelemetry-semantic-conventions",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"opentelemetry-api==1.45.2\", \"typing-extensions>=4.5.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "7e443b23ebb345b06a7be96db4803ae81ac7ec8995e37f6814d0f2006b8e6447"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions@0.66b2",
+      "type": "library",
+      "version": "0.66b2"
+    },
+    {
+      "bom-ref": "orjson",
+      "name": "orjson",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "4b64a33cb3c47299ae9afe9919c67fb5159e89d086857a4fe74c727044c98612"
+        }
+      ],
+      "purl": "pkg:pypi/orjson@3.13.0",
+      "type": "library",
+      "version": "3.13.0"
+    },
+    {
+      "bom-ref": "ormsgpack",
+      "name": "ormsgpack",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "582d86268d04891ad4defac9ad3619a6c27def87a87249b6ddabd170d10d1f3c"
+        }
+      ],
+      "purl": "pkg:pypi/ormsgpack@1.13.0",
+      "type": "library",
+      "version": "1.13.0"
+    },
+    {
+      "bom-ref": "packaging",
+      "name": "packaging",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+        }
+      ],
+      "purl": "pkg:pypi/packaging@26.3",
+      "type": "library",
+      "version": "26.3"
+    },
+    {
+      "bom-ref": "pathspec",
+      "name": "pathspec",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"hyperscan >=0.7 ; extra == \\\"hyperscan\\\"\", \"typing-extensions >=4 ; extra == \\\"optional\\\"\", \"google-re2 >=1.1 ; extra == \\\"re2\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "68de3f158b6592f086e78754c962092f32a761944ab66a660c0d62ad79c4b69b"
+        }
+      ],
+      "purl": "pkg:pypi/pathspec@1.1.1",
+      "type": "library",
+      "version": "1.1.1"
+    },
+    {
+      "bom-ref": "prometheus-client",
+      "name": "prometheus-client",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"twisted; extra == \\\"twisted\\\"\", \"aiohttp; extra == \\\"aiohttp\\\"\", \"django; extra == \\\"django\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "ea4a4f111b1723da4c588baa002fe7b7886f0e8f653c4dd3d05738686ea85004"
+        }
+      ],
+      "purl": "pkg:pypi/prometheus-client@0.26.0",
+      "type": "library",
+      "version": "0.26.0"
+    },
+    {
+      "bom-ref": "protobuf",
+      "name": "protobuf",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f"
+        }
+      ],
+      "purl": "pkg:pypi/protobuf@6.33.6",
+      "type": "library",
+      "version": "6.33.6"
+    },
+    {
+      "bom-ref": "pycparser",
+      "name": "pycparser",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "ad8db5fe2b0e0a3b0e8419fe5041b80be92470a40b06bd9c1462a0a8bb637c92"
+        }
+      ],
+      "purl": "pkg:pypi/pycparser@3.12",
+      "type": "library",
+      "version": "3.12"
+    },
+    {
+      "bom-ref": "pydantic",
+      "name": "pydantic",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"annotated-types>=0.6.0\", \"pydantic-core==2.50.2\", \"typing-extensions>=4.16.0\", \"typing-inspection>=0.4.4\", \"email-validator>=2.0.0; extra == 'email'\", \"tzdata; (platform_system == 'Windows') and extra == 'timezone'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "5e27715d350cc99bc33877404deba2a9491221ae972db8f8c79f64032bee3a01"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@2.14.2",
+      "type": "library",
+      "version": "2.14.2"
+    },
+    {
+      "bom-ref": "pydantic-core",
+      "name": "pydantic-core",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions>=4.16.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "ca680c6a06d7e24685a8c13f47c56af9f4deaba25272412f8688459cd6dd2dd1"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic-core@2.50.2",
+      "type": "library",
+      "version": "2.50.2"
+    },
+    {
+      "bom-ref": "pygments",
+      "name": "pygments",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"colorama>=0.4.6; extra == 'windows-terminal'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43"
+        }
+      ],
+      "purl": "pkg:pypi/pygments@2.21.0",
+      "type": "library",
+      "version": "2.21.0"
+    },
+    {
+      "bom-ref": "pyjwt",
+      "name": "pyjwt",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing_extensions>=4.0; python_version < \\\"3.11\\\"\", \"cryptography>=3.4.0; extra == \\\"crypto\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3"
+        }
+      ],
+      "purl": "pkg:pypi/pyjwt@2.15.1",
+      "type": "library",
+      "version": "2.15.1"
+    },
+    {
+      "bom-ref": "python-dateutil",
+      "name": "python-dateutil",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"six >=1.5\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93"
+        }
+      ],
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "version": "2.9.0.post0"
+    },
+    {
+      "bom-ref": "python-dotenv",
+      "name": "python-dotenv",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"click>=5.0; extra == \\\"cli\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "87cfee6042412d48df1100ea7822684988c3f2b79de7a250f4717f4df3026d6f"
+        }
+      ],
+      "purl": "pkg:pypi/python-dotenv@1.2.4",
+      "type": "library",
+      "version": "1.2.4"
+    },
+    {
+      "bom-ref": "pyyaml",
+      "name": "pyyaml",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+        }
+      ],
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "type": "library",
+      "version": "6.0.3"
+    },
+    {
+      "bom-ref": "regex",
+      "name": "regex",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "33859377dbf8dd38ee3de73fd97faebf4a63d50576e3cc1a9dfe44df08b0936a"
+        }
+      ],
+      "purl": "pkg:pypi/regex@2026.9.29",
+      "type": "library",
+      "version": "2026.9.29"
+    },
+    {
+      "bom-ref": "requests",
+      "name": "requests",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"charset_normalizer<4,>=2\", \"idna<4,>=2.5\", \"urllib3<3,>=1.26\", \"certifi>=2023.5.7\", \"PySocks!=1.5.7,>=1.5.6; extra == \\\"socks\\\"\", \"chardet<8,>=3.0.2; extra == \\\"use-chardet-on-py3\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27"
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.34.2",
+      "type": "library",
+      "version": "2.34.2"
+    },
+    {
+      "bom-ref": "requests-toolbelt",
+      "name": "requests-toolbelt",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"requests (<3.0.0,>=2.0.1)\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fa52f26237cc8d148d25c5746fdca499a56d0e765e69095cc3564a07cce23967"
+        }
+      ],
+      "purl": "pkg:pypi/requests-toolbelt@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    },
+    {
+      "bom-ref": "rich",
+      "name": "rich",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"ipywidgets (>=7.5.1,<9) ; extra == \\\"jupyter\\\"\", \"markdown-it-py (>=2.2.0)\", \"pygments (>=2.13.0,<3.0.0)\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9.0"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fad34fc603fac4481bf81f8dd629492fc302c0ec31909c86644751512afb2e3b"
+        }
+      ],
+      "purl": "pkg:pypi/rich@15.0.0",
+      "type": "library",
+      "version": "15.0.0"
+    },
+    {
+      "bom-ref": "s3transfer",
+      "name": "s3transfer",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"botocore (<2.0a.0,>=1.37.4)\", \"botocore[crt] (<2.0a.0,>=1.37.4) ; extra == 'crt'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">= 3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "7b7029ecab804a4f394906ed493b93402beb32538be18caa7b462873e2ed7d81"
+        }
+      ],
+      "purl": "pkg:pypi/s3transfer@0.19.3",
+      "type": "library",
+      "version": "0.19.3"
+    },
+    {
+      "bom-ref": "setuptools",
+      "name": "setuptools",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"pytest!=8.1.*,>=6; extra == \\\"test\\\"\", \"virtualenv>=13.0.0; extra == \\\"test\\\"\", \"wheel>=0.44.0; extra == \\\"test\\\"\", \"pip>=19.1; extra == \\\"test\\\"\", \"packaging>=26.3; extra == \\\"test\\\"\", \"jaraco.envs>=2.2; extra == \\\"test\\\"\", \"pytest-xdist>=3; extra == \\\"test\\\"\", \"jaraco.path>=3.7.2; extra == \\\"test\\\"\", \"build[virtualenv]>=1.0.3; extra == \\\"test\\\"\", \"filelock>=3.4.0; extra == \\\"test\\\"\", \"ini2toml[lite]>=0.14; extra == \\\"test\\\"\", \"tomli-w>=1.0.0; extra == \\\"test\\\"\", \"pytest-timeout; extra == \\\"test\\\"\", \"pytest-perf; sys_platform != \\\"cygwin\\\" and extra == \\\"test\\\"\", \"jaraco.develop>=7.21; (python_version >= \\\"3.9\\\" and sys_platform != \\\"cygwin\\\") and extra == \\\"test\\\"\", \"pytest-home>=0.5; extra == \\\"test\\\"\", \"pytest-subprocess; extra == \\\"test\\\"\", \"pyproject-hooks!=1.1; extra == \\\"test\\\"\", \"jaraco.test>=5.5; extra == \\\"test\\\"\", \"sphinx>=3.5; extra == \\\"doc\\\"\", \"jaraco.packaging>=9.3; extra == \\\"doc\\\"\", \"rst.linker>=1.9; extra == \\\"doc\\\"\", \"furo; extra == \\\"doc\\\"\", \"sphinx-lint; extra == \\\"doc\\\"\", \"jaraco.tidelift>=1.4; extra == \\\"doc\\\"\", \"pygments-github-lexers==0.0.5; extra == \\\"doc\\\"\", \"sphinx-favicon; extra == \\\"doc\\\"\", \"sphinx-inline-tabs; extra == \\\"doc\\\"\", \"sphinx-reredirects; extra == \\\"doc\\\"\", \"sphinxcontrib-towncrier; extra == \\\"doc\\\"\", \"sphinx-notfound-page<2,>=1; extra == \\\"doc\\\"\", \"pyproject-hooks!=1.1; extra == \\\"doc\\\"\", \"towncrier<24.7; extra == \\\"doc\\\"\", \"packaging>=26.3; extra == \\\"core\\\"\", \"more_itertools>=8.8; extra == \\\"core\\\"\", \"jaraco.text>=3.7; extra == \\\"core\\\"\", \"importlib_metadata>=6; python_version < \\\"3.10\\\" and extra == \\\"core\\\"\", \"tomli>=2.0.1; python_version < \\\"3.11\\\" and extra == \\\"core\\\"\", \"wheel>=0.43.0; extra == \\\"core\\\"\", \"jaraco.functools>=4; extra == \\\"core\\\"\", \"more_itertools; extra == \\\"core\\\"\", \"pytest-checkdocs>=2.14; extra == \\\"check\\\"\", \"pytest-ruff>=0.2.1; sys_platform != \\\"cygwin\\\" and extra == \\\"check\\\"\", \"ruff>=0.13.0; sys_platform != \\\"cygwin\\\" and extra == \\\"check\\\"\", \"pytest-cov; extra == \\\"cover\\\"\", \"pytest-enabler>=3.4; extra == \\\"enabler\\\"\", \"pytest-mypy>=1.0.1; platform_python_implementation != \\\"PyPy\\\" and extra == \\\"type\\\"\", \"mypy==1.18.*; extra == \\\"type\\\"\", \"importlib_metadata>=7.0.2; python_version < \\\"3.10\\\" and extra == \\\"type\\\"\", \"jaraco.develop>=7.21; sys_platform != \\\"cygwin\\\" and extra == \\\"type\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "24939b84ead30ff4581918c8d5a95aafd377f6a8afc61f30ea18358a8786bfa4"
+        }
+      ],
+      "purl": "pkg:pypi/setuptools@84.2.1",
+      "type": "library",
+      "version": "84.2.1"
+    },
+    {
+      "bom-ref": "shellingham",
+      "name": "shellingham",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa"
+        }
+      ],
+      "purl": "pkg:pypi/shellingham@1.5.4",
+      "type": "library",
+      "version": "1.5.4"
+    },
+    {
+      "bom-ref": "six",
+      "name": "six",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468"
+        }
+      ],
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "version": "1.17.0"
+    },
+    {
+      "bom-ref": "skillspector",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/NVIDIA/skillspector.git"
+        }
+      ],
+      "name": "skillspector",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"boto3>=1.34.0\", \"httpx>=0.28.0\", \"langchain-anthropic>=1.4.5\", \"langchain-aws>=0.2.0\", \"langchain-core>=1.2.17\", \"langchain-openai>=1.1.10\", \"langgraph-cli[inmem]>=0.4.14\", \"langgraph>=1.0.10\", \"langsmith>=0.7.30\", \"openai>=2.25.0\", \"packaging>=24.0\", \"pydantic>=2.12.0\", \"pyyaml>=6.0.1\", \"rich>=14.3.0\", \"typer<0.24,>=0.23.0\", \"yara-python>=4.5.0\", \"build>=1.4.0; extra == 'dev'\", \"hatchling>=1.31.0; extra == 'dev'\", \"mcp>=1.2.0; extra == 'dev'\", \"mypy>=1.19.0; extra == 'dev'\", \"poetry>=2.3.0; extra == 'dev'\", \"pytest-asyncio>=1.3.0; extra == 'dev'\", \"pytest-cov>=7.0.0; extra == 'dev'\", \"pytest>=9.0.0; extra == 'dev'\", \"ruff>=0.15.0; extra == 'dev'\", \"twine>=6.2.0; extra == 'dev'\", \"mcp>=1.2.0; extra == 'mcp'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": "<3.15,>=3.12"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "4c29b357b2ab4fba6fa8aed80f8e7ecb4a9d064038b3a054717b9e8e85b1a8de"
+        },
+        {
+          "name": "ase:installed-vcs-commit",
+          "value": "2bc641fd0639550a1cae9557491f483e30520afb"
+        }
+      ],
+      "type": "library",
+      "version": "2.8.2"
+    },
+    {
+      "bom-ref": "sniffio",
+      "name": "sniffio",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.7"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "e87e83bd780638c08d4ae02ba8c36a89c6b55e2ea910d441aa20ad0b30e51fb6"
+        }
+      ],
+      "purl": "pkg:pypi/sniffio@1.3.1",
+      "type": "library",
+      "version": "1.3.1"
+    },
+    {
+      "bom-ref": "sse-starlette",
+      "name": "sse-starlette",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"starlette>=0.49.1\", \"anyio>=4.7.0\", \"uvicorn>=0.34.0; extra == \\\"examples\\\"\", \"fastapi>=0.115.12; extra == \\\"examples\\\"\", \"pydantic>=2; extra == \\\"examples\\\"\", \"sqlalchemy[asyncio]>=2.0.41; extra == \\\"examples-db\\\"\", \"aiosqlite>=0.21.0; extra == \\\"examples-db\\\"\", \"uvicorn>=0.34.0; extra == \\\"uvicorn\\\"\", \"granian>=2.3.1; extra == \\\"granian\\\"\", \"daphne>=4.2.0; extra == \\\"daphne\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fd6db17b500d90b9f336b57088e0b0f2d122c0473b542dfe4bf4cc4f720d9797"
+        }
+      ],
+      "purl": "pkg:pypi/sse-starlette@3.6.0",
+      "type": "library",
+      "version": "3.6.0"
+    },
+    {
+      "bom-ref": "starlette",
+      "name": "starlette",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio<5,>=4.0.0\", \"typing-extensions>=4.10.0; python_version < '3.13'\", \"httpx2>=2.0.0; extra == 'full'\", \"httpx<0.29.0,>=0.27.0; extra == 'full'\", \"itsdangerous; extra == 'full'\", \"jinja2; extra == 'full'\", \"opentelemetry-api; extra == 'full'\", \"python-multipart>=0.0.18; extra == 'full'\", \"pyyaml; extra == 'full'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "82f72dde2c5c3c55d45d9461adce5e30973481f7f3e10b59e497bbc5b8abf598"
+        }
+      ],
+      "purl": "pkg:pypi/starlette@1.10.0",
+      "type": "library",
+      "version": "1.10.0"
+    },
+    {
+      "bom-ref": "structlog",
+      "name": "structlog",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions; python_version < '3.11'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "bec5f360bcf0eb40e207e72b9ec2c86f2a8df54028603fba2f29a9c040df95e8"
+        }
+      ],
+      "purl": "pkg:pypi/structlog@25.5.0",
+      "type": "library",
+      "version": "25.5.0"
+    },
+    {
+      "bom-ref": "tenacity",
+      "name": "tenacity",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"reno; extra == 'doc'\", \"sphinx; extra == 'doc'\", \"pytest; extra == 'test'\", \"tornado>=6.0; extra == 'test'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "1d30f0b4cd3cf1ad585400f9ea9c424e64c630ea63e57209a1f16fce72e68eb7"
+        }
+      ],
+      "purl": "pkg:pypi/tenacity@9.2.1",
+      "type": "library",
+      "version": "9.2.1"
+    },
+    {
+      "bom-ref": "tiktoken",
+      "name": "tiktoken",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"regex\", \"requests\", \"blobfile>=3; extra == \\\"blobfile\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "30086725221223f7a19463e71c0e9f79fe7aba9125b36632c00bf50a23fa968a"
+        }
+      ],
+      "purl": "pkg:pypi/tiktoken@0.14.0",
+      "type": "library",
+      "version": "0.14.0"
+    },
+    {
+      "bom-ref": "truststore",
+      "name": "truststore",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">= 3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "1fd496f290853214e630d96f7163d2dd916f84ebe634b58aa827d6853e8f8610"
+        }
+      ],
+      "purl": "pkg:pypi/truststore@0.10.5",
+      "type": "library",
+      "version": "0.10.5"
+    },
+    {
+      "bom-ref": "typer",
+      "name": "typer",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"click>=8.0.0; python_version < \\\"3.10\\\"\", \"click>=8.2.1; python_version >= \\\"3.10\\\"\", \"shellingham>=1.3.0\", \"rich>=12.3.0\", \"annotated-doc>=0.0.2\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "0fe783ecac7f1a076e805c8caf569a83d7b8bbe2c6b752fa136d3f537a22e98b"
+        }
+      ],
+      "purl": "pkg:pypi/typer@0.23.2",
+      "type": "library",
+      "version": "0.23.2"
+    },
+    {
+      "bom-ref": "typing-inspection",
+      "name": "typing-inspection",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"typing-extensions>=4.15.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da"
+        }
+      ],
+      "purl": "pkg:pypi/typing-inspection@0.4.4",
+      "type": "library",
+      "version": "0.4.4"
+    },
+    {
+      "bom-ref": "typing-extensions",
+      "name": "typing-extensions",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+        }
+      ],
+      "purl": "pkg:pypi/typing-extensions@4.16.0",
+      "type": "library",
+      "version": "4.16.0"
+    },
+    {
+      "bom-ref": "urllib3",
+      "name": "urllib3",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'\", \"brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'\", \"h2<5,>=4; extra == 'h2'\", \"pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'\", \"backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4"
+        }
+      ],
+      "purl": "pkg:pypi/urllib3@2.8.0",
+      "type": "library",
+      "version": "2.8.0"
+    },
+    {
+      "bom-ref": "uuid-utils",
+      "name": "uuid-utils",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "0332e95af212190fed2aabf51512552425c7e7082cd1216563530174e9a16f08"
+        }
+      ],
+      "purl": "pkg:pypi/uuid-utils@0.19.0",
+      "type": "library",
+      "version": "0.19.0"
+    },
+    {
+      "bom-ref": "uvicorn",
+      "name": "uvicorn",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"click>=7.0\", \"h11>=0.8\", \"typing-extensions>=4.0; python_version < '3.11'\", \"httptools>=0.8.0; extra == 'standard'\", \"python-dotenv>=0.13; extra == 'standard'\", \"pyyaml>=5.1; extra == 'standard'\", \"uvloop>=0.15.1; (sys_platform != 'win32' and (sys_platform != 'cygwin' and platform_python_implementation != 'PyPy')) and extra == 'standard'\", \"watchfiles>=0.20; extra == 'standard'\", \"websockets>=13.0; extra == 'standard'\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "9399e5ddda3d26e842d6fb5420c38b0857aac568d53badbdc224b3a21339efa8"
+        }
+      ],
+      "purl": "pkg:pypi/uvicorn@0.54.0",
+      "type": "library",
+      "version": "0.54.0"
+    },
+    {
+      "bom-ref": "uvloop",
+      "name": "uvloop",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"aiohttp>=3.10.5; extra == \\\"test\\\"\", \"flake8~=6.1; extra == \\\"test\\\"\", \"psutil; extra == \\\"test\\\"\", \"pycodestyle~=2.11.0; extra == \\\"test\\\"\", \"pyOpenSSL~=25.3.0; python_version < \\\"3.9\\\" and extra == \\\"test\\\"\", \"pyOpenSSL~=26.4.0; python_version >= \\\"3.9\\\" and extra == \\\"test\\\"\", \"mypy>=0.800; extra == \\\"test\\\"\", \"packaging>=20; extra == \\\"dev\\\"\", \"setuptools>=60; extra == \\\"dev\\\"\", \"Cython~=3.1; extra == \\\"dev\\\"\", \"Sphinx~=4.1.2; extra == \\\"docs\\\"\", \"sphinxcontrib-asyncio~=0.3.0; extra == \\\"docs\\\"\", \"sphinx_rtd_theme~=0.5.2; extra == \\\"docs\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.8.1"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "fe11a50198ffd4d9f1cb20922dc638ad459d5e63e6c615b0c1c69448d3362977"
+        }
+      ],
+      "purl": "pkg:pypi/uvloop@0.23.0",
+      "type": "library",
+      "version": "0.23.0"
+    },
+    {
+      "bom-ref": "watchfiles",
+      "name": "watchfiles",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"anyio>=3.0.0\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.10"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "1fba87d08d66f10f7515e4817abd4ac7f27abf3300cb33b7ad3f79762987a502"
+        }
+      ],
+      "purl": "pkg:pypi/watchfiles@1.3.0",
+      "type": "library",
+      "version": "1.3.0"
+    },
+    {
+      "bom-ref": "websockets",
+      "name": "websockets",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.11"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "09b83a3c9da174e7f309c9052c45c06907b8011be1f22bdf58b4a1e26221d669"
+        }
+      ],
+      "purl": "pkg:pypi/websockets@17.4",
+      "type": "library",
+      "version": "17.4"
+    },
+    {
+      "bom-ref": "xxhash",
+      "name": "xxhash",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "9c77e2dc143269f99b8cda61c3ee1c4d106019d9d434fb345033e8f44440408d"
+        }
+      ],
+      "purl": "pkg:pypi/xxhash@4.0.2",
+      "type": "library",
+      "version": "4.0.2"
+    },
+    {
+      "bom-ref": "yara-python",
+      "name": "yara-python",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ""
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "a4641e9aa524e78599383b046274a40a6586f8251585b276d41bc739a024dc6a"
+        }
+      ],
+      "purl": "pkg:pypi/yara-python@4.5.4",
+      "type": "library",
+      "version": "4.5.4"
+    },
+    {
+      "bom-ref": "zstandard",
+      "name": "zstandard",
+      "properties": [
+        {
+          "name": "ase:requires-dist",
+          "value": "[\"cffi~=1.17; (platform_python_implementation != \\\"PyPy\\\" and python_version < \\\"3.14\\\") and extra == \\\"cffi\\\"\", \"cffi>=2.0.0b; (platform_python_implementation != \\\"PyPy\\\" and python_version >= \\\"3.14\\\") and extra == \\\"cffi\\\"\"]"
+        },
+        {
+          "name": "ase:requires-python",
+          "value": ">=3.9"
+        },
+        {
+          "name": "ase:metadata-sha256",
+          "value": "03d37736b26b9ae48451dd17026d93dffbd252fb708c1a2a9ae1be0c0966de92"
+        }
+      ],
+      "purl": "pkg:pypi/zstandard@0.25.0",
+      "type": "library",
+      "version": "0.25.0"
+    }
+  ],
+  "metadata": {
+    "properties": [
+      {
+        "name": "ase:evidence-kind",
+        "value": "observed-installed-environment"
+      },
+      {
+        "name": "ase:runtime",
+        "value": "{\"architecture\": \"x86_64\", \"os\": \"linux\", \"python\": \"3.13.9\"}"
+      },
+      {
+        "name": "ase:dependency-graph",
+        "value": "not-resolved; declarations retained including extras and markers"
+      },
+      {
+        "name": "ase:installation-reproducible",
+        "value": "false"
+      },
+      {
+        "name": "ase:approval-granted",
+        "value": "false"
+      }
+    ]
+  },
+  "specVersion": "1.5",
+  "version": 1
+}

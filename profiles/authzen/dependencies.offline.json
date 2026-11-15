@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "features": ["offline-request"],
+  "platforms": [{
+    "id": "linux-x86-64",
+    "os": "linux",
+    "distribution": "any",
+    "version": {"scheme": "none", "constraint": ""},
+    "architectures": ["x86_64"],
+    "applies_to": ["offline-request"],
+    "support": {"status": "declared", "evidence": []}
+  }],
+  "hosts": [],
+  "software": [{
+    "id": "python",
+    "kind": "runtime",
+    "required": true,
+    "version": {"scheme": "pep440", "constraint": ">=3.12"},
+    "applies_to": ["offline-request"],
+    "platforms": ["linux-x86-64"],
+    "installation": {
+      "method": "preinstalled",
+      "package": "CPython>=3.12",
+      "source": "https://www.python.org/downloads/",
+      "instructions": "README.md"
+    }
+  }],
+  "skills": [],
+  "network": [],
+  "credentials": [],
+  "lockfiles": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "profile_status": "draft-observed-environment",
+  "installable_profile_ready": false,
+  "activation_implemented": false,
+  "scanner": {
+    "version": "2.8.2",
+    "source": "https://github.com/NVIDIA/skillspector.git",
+    "revision": "2bc641fd0639550a1cae9557491f483e30520afb",
+    "identity_evidence": "installed distribution metadata; not independent source attestation"
+  },
+  "environment": {
+    "python": "3.13.9",
+    "os": "linux",
+    "architecture": "x86_64",
+    "inventory": "environment.cdx.json",
+    "inventory_components": 101,
+    "dependency_declarations_retained": true,
+    "resolved_feature_dependency_graph": false,
+    "native_os_library_prerequisites_complete": false,
+    "reproducible_artifact_hash_lock": false
+  },
+  "resolution_attempts": [
+    {
+      "mode": "offline-no-build",
+      "result": "failed",
+      "reason": "required registry metadata/artifacts not fully cached"
+    },
+    {
+      "mode": "online-no-build",
+      "result": "failed",
+      "reason": "upstream langgraph-cli inmem dependency closure includes packages without required wheel coverage; source builds were disabled"
+    }
+  ],
+  "remaining_requirements": [
+    "Review and pin installation artifacts and build requirements without silently executing upstream builds.",
+    "Resolve selected-feature transitive dependencies and native OS libraries; keep unsupported runtimes/platforms explicit.",
+    "Prove a clean unattended install and static scan under the complete profile.",
+    "Bind trusted scanner environment identity to admission before supporting inspection-result reuse."
+  ]
+}

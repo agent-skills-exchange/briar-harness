@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "briar-harness"
+version = "0.1.0"
+description = "Lightweight, non-interactive tools for independently usable Agent Skills"
+requires-python = ">=3.12"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+skill-validation = ["jsonschema==4.19.2"]
+
+[project.scripts]
+briar-harness = "agent_skills_exchange.cli:main"
+ase = "agent_skills_exchange.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["agent_skills_exchange*"]
+
+[tool.setuptools.package-data]
+agent_skills_exchange = ["schemas/*.json"]
