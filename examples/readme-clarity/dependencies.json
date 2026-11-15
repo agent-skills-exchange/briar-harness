@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "features": ["text-review"],
+  "platforms": [{
+    "id": "instruction-only",
+    "os": "any",
+    "distribution": "any",
+    "version": {"scheme": "none", "constraint": ""},
+    "architectures": ["any"],
+    "applies_to": ["text-review"],
+    "support": {"status": "declared", "evidence": []}
+  }],
+  "hosts": [],
+  "software": [],
+  "skills": [],
+  "network": [],
+  "credentials": [],
+  "lockfiles": []
+}

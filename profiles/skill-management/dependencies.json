@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "features": ["static-inspection", "environment-inventory"],
+  "platforms": [
+    {
+      "id": "linux-x86-64-observed",
+      "os": "linux",
+      "distribution": "any",
+      "version": {"scheme": "none", "constraint": ""},
+      "architectures": ["x86_64"],
+      "applies_to": ["static-inspection", "environment-inventory"],
+      "support": {"status": "declared", "evidence": []}
+    }
+  ],
+  "hosts": [],
+  "software": [
+    {
+      "id": "scanner-python",
+      "kind": "runtime",
+      "required": true,
+      "version": {"scheme": "exact", "constraint": "3.13.9"},
+      "applies_to": ["static-inspection", "environment-inventory"],
+      "platforms": ["linux-x86-64-observed"],
+      "installation": {
+        "method": "preinstalled",
+        "package": "CPython==3.13.9",
+        "source": "https://www.python.org/downloads/",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "skillspector",
+      "kind": "tool",
+      "required": true,
+      "version": {"scheme": "exact", "constraint": "2.8.2"},
+      "applies_to": ["static-inspection", "environment-inventory"],
+      "platforms": ["linux-x86-64-observed"],
+      "installation": {
+        "method": "preinstalled",
+        "package": "skillspector @ git+https://github.com/NVIDIA/skillspector.git@2bc641fd0639550a1cae9557491f483e30520afb",
+        "source": "https://github.com/NVIDIA/skillspector.git",
+        "instructions": "README.md"
+      }
+    }
+  ],
+  "skills": [],
+  "network": [],
+  "credentials": [],
+  "lockfiles": [
+    {
+      "path": "environment.cdx.json",
+      "sha256": "bcb21432e267b22b57840ef851db186949e84cc4e05ec06f3a6b0accbfa92562",
+      "format": "cyclonedx-1.5-observed-environment-not-install-lock",
+      "applies_to": ["static-inspection", "environment-inventory"]
+    }
+  ]
+}

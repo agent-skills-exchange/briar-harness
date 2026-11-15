@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "features": [
+    "reference-format-diagnostic"
+  ],
+  "platforms": [
+    {
+      "id": "linux-x86-64",
+      "os": "linux",
+      "distribution": "any",
+      "version": {
+        "scheme": "none",
+        "constraint": ""
+      },
+      "architectures": [
+        "x86_64"
+      ],
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "support": {
+        "status": "declared",
+        "evidence": []
+      }
+    }
+  ],
+  "hosts": [],
+  "software": [
+    {
+      "id": "python",
+      "kind": "runtime",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "3.13.9"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "CPython==3.13.9",
+        "source": "https://www.python.org/downloads/",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "skills-ref",
+      "kind": "tool",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "0.1.0"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "skills-ref @ git+https://github.com/agentskills/agentskills.git@f130f348f502d9804278a617f86929846896d2e9#subdirectory=skills-ref",
+        "source": "https://github.com/agentskills/agentskills",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "click",
+      "kind": "library",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "8.3.1"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "click==8.3.1",
+        "source": "https://pypi.org/project/click/",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "strictyaml",
+      "kind": "library",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "1.7.3"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "strictyaml==1.7.3",
+        "source": "https://pypi.org/project/strictyaml/",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "python-dateutil",
+      "kind": "library",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "2.9.0.post0"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "python-dateutil==2.9.0.post0",
+        "source": "https://pypi.org/project/python-dateutil/",
+        "instructions": "README.md"
+      }
+    },
+    {
+      "id": "six",
+      "kind": "library",
+      "required": true,
+      "version": {
+        "scheme": "exact",
+        "constraint": "1.17.0"
+      },
+      "applies_to": [
+        "reference-format-diagnostic"
+      ],
+      "platforms": [
+        "linux-x86-64"
+      ],
+      "installation": {
+        "method": "preinstalled",
+        "package": "six==1.17.0",
+        "source": "https://pypi.org/project/six/",
+        "instructions": "README.md"
+      }
+    }
+  ],
+  "skills": [],
+  "network": [],
+  "credentials": [],
+  "lockfiles": []
+}

@@ -1,0 +1,44 @@
+{
+  "profile_version": 1,
+  "feature": "https-evaluation",
+  "ready": false,
+  "dependency_manifest_complete": false,
+  "live_integration_tested": false,
+  "platforms": [{
+    "os": "linux",
+    "distribution": "any",
+    "version": null,
+    "architecture": "x86_64",
+    "status": "declared-not-live-tested"
+  }],
+  "software": [
+    {"id": "python", "constraint": ">=3.12", "provisioning": "preinstalled"},
+    {"id": "python-ssl", "constraint": "working ssl.create_default_context", "provisioning": "operator-managed"},
+    {"id": "native-tls-libraries", "constraint": "compatible with provisioned Python SSL backend", "resolved_packages": null},
+    {"id": "ca-trust-store", "constraint": "operator-maintained trust anchors for bound HTTPS endpoint", "resolved_packages": null},
+    {"id": "host-runner", "constraint": "enforces overall workload deadline independently of socket inactivity timeout", "implementation": null}
+  ],
+  "skills": [],
+  "services": [{"id": "authzen-pdp", "endpoint": null, "protocol": "AuthZEN single access evaluation over HTTPS", "policy_revision": null}],
+  "network": [{"id": "pdp-egress", "destination": null, "purpose": "one explicitly authorised policy evaluation", "required": true}],
+  "credentials": [{
+    "id": "pdp-bearer",
+    "required": true,
+    "origin": null,
+    "permissions": ["single access evaluation for operator-authorised worker/project/task scope"],
+    "provisioning": "operator-managed; never from skill content or command-line values",
+    "value_in_profile": false
+  }],
+  "installation": {"automatic": false, "instructions": "README.md"},
+  "unresolved": [
+    "exact supported distribution/runtime and native-library closure",
+    "operator-bound PDP endpoint and credential origin",
+    "protected policy semantics/revision and current revocation checks",
+    "verified workload identity and root delegation",
+    "enforced host-runner wall-clock deadline",
+    "complete concrete dependencies-v1 manifest for selected environment",
+    "independent review and live integration evidence"
+  ],
+  "approval_granted": false,
+  "activated": false
+}
