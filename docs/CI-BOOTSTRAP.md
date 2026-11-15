@@ -1,14 +1,18 @@
-# Core test workflow candidate
+# Core test workflow
 
-`.github/workflows/core-tests.yml` is a locally prepared workflow, not an enabled
-GitHub integration or a passed Actions result. Publishing/enabling it needs the
-repository bootstrap authority and any necessary scoped workflow-write permission.
-Do not widen the existing App's permissions or manufacture a check status.
+`.github/workflows/core-tests.yml` is published in
+[draft PR #1](https://github.com/agent-skills-exchange/briar-harness/pull/1).
+The initial hosted run reached the tests on both Python versions but failed:
+mocked scanner tests borrowed the host interpreter's executable permissions.
+The repair uses a private synthetic executable and adds an explicit rejection
+test for group/world-writable scanners. It does not change production policy.
+Use the PR's exact-head checks for the current result; publication is not a
+passing check. No App permissions were widened or check statuses manufactured.
 
 The candidate runs on pull requests and pushes to main, using disposable GitHub
 `ubuntu-24.04` runners and Python3.12/3.14. Minor-series selection intentionally
 uses the current patch supplied by setup-python; the job prints the actual
-runtime version. Other OS/architectures and actual hosted execution are unproved.
+runtime version. Other OS/architectures remain unproved.
 
 Actions are pinned to commits resolved from their official repositories on
 15 November2026: checkout v6, setup-python v6 and setup-uv v7. The setup-uv v7
@@ -29,8 +33,8 @@ credential operation, SkillSpector activation, service deployment or live sync.
 Unit tests use synthetic packages/processes; this is not a real Cloudflare audit.
 
 Focused source assertions and offline lock checking are author checks. They are
-not a complete YAML/Actions validation or a real hosted result. Once bootstrap is
-authorised, verify the actual check for the exact PR/head/base and retain any
+not a complete YAML/Actions validation or a real hosted result. Verify the
+actual check for the exact PR/head/base and retain any
 failures before correcting the candidate. Exact-candidate independent review and
 other required comprehensive checks remain separate.
 

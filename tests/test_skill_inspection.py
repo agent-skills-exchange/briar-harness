@@ -8,7 +8,6 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
-import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -51,6 +50,26 @@ def report_fixture(lock):
 
 
 class InspectionTests(unittest.TestCase):
+    def setUp(self):
+        # run_tool is mocked: do not borrow the host interpreter's permissions
+        # as scanner metadata (hosted Python may be group-writable).
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.scanner = str(Path(temporary.name) / "synthetic-scanner")
+        Path(self.scanner).write_text("# synthetic scanner; never executed\n")
+        Path(self.scanner).chmod(0o700)
+
+    def test_writable_scanner_is_rejected_before_execution(self):
+        with tempfile.TemporaryDirectory() as directory:
+            lock, cache, _content = self.fixture(directory)
+            for mode in (0o720, 0o702):
+                with self.subTest(mode=oct(mode)):
+                    Path(self.scanner).chmod(mode)
+                    with patch("agent_skills_exchange.inspection.run_tool") as run:
+                        self.assert_code("unsafe_scanner_executable", lambda: inspect_package(
+                            lock, cache, Path(directory) / "reports", self.scanner, timeout=30))
+                        run.assert_not_called()
+
     def assert_code(self, code, call):
         with self.assertRaises(DependencyError) as caught:
             call()
@@ -190,7 +209,7 @@ class InspectionTests(unittest.TestCase):
             before = (content / "SKILL.md").read_bytes()
             with patch("agent_skills_exchange.inspection.run_tool", self.runner(lock)):
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=30)
+                                         self.scanner, timeout=30)
             self.assertTrue(result["inspection_passed"])
             self.assertTrue(result["valid"])
             self.assertFalse(result["activated"])
@@ -210,7 +229,7 @@ class InspectionTests(unittest.TestCase):
             with patch("agent_skills_exchange.inspection.run_tool",
                        self.runner(lock, score=76, exit_code=1)):
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=30)
+                                         self.scanner, timeout=30)
             self.assertFalse(result["valid"])
             self.assertEqual(result["error"], "inspection_findings_blocked")
             self.assertTrue((Path(result["evidence"]) / "report.json").is_file())
@@ -231,7 +250,7 @@ class InspectionTests(unittest.TestCase):
             with patch("agent_skills_exchange.inspection.run_tool", self.runner(lock)), \
                     patch.object(Path, "read_bytes", observe):
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=30)
+                                         self.scanner, timeout=30)
             self.assertTrue(result["valid"])
             self.assertEqual(len(snapshots), 1)
             self.assertEqual(result["report_sha256"], hashlib.sha256(snapshots[0]).hexdigest())
@@ -250,7 +269,7 @@ class InspectionTests(unittest.TestCase):
                     return result
                 with patch("agent_skills_exchange.inspection.run_tool", execute):
                     result = inspect_package(lock, cache, Path(directory) / "reports",
-                                             sys.executable, timeout=30)
+                                             self.scanner, timeout=30)
                 self.assertFalse(result["valid"])
                 self.assertFalse(result["activated"])
                 self.assertIn("error", result)
@@ -262,7 +281,7 @@ class InspectionTests(unittest.TestCase):
             with patch("agent_skills_exchange.inspection.run_tool",
                        self.runner(lock, mutate=True)):
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=30)
+                                         self.scanner, timeout=30)
             self.assertFalse(result["valid"])
             self.assertEqual(result["error"], "cache_size_mismatch")
             self.assertEqual((content / "SKILL.md").read_bytes(), before)
@@ -273,7 +292,7 @@ class InspectionTests(unittest.TestCase):
             with patch("agent_skills_exchange.inspection.run_tool",
                        side_effect=subprocess.TimeoutExpired("scanner", 0.01)) as run:
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=0.01)
+                                         self.scanner, timeout=0.01)
             self.assertEqual(result["error"], "inspection_timeout")
             self.assertEqual(run.call_count, 1)
 
@@ -282,7 +301,7 @@ class InspectionTests(unittest.TestCase):
             lock, cache, _content = self.fixture(directory)
             for timeout in (0, -1, float("nan"), float("inf")):
                 self.assert_code("invalid_inspection_timeout", lambda: inspect_package(
-                    lock, cache, Path(directory) / "reports", sys.executable, timeout=timeout))
+                    lock, cache, Path(directory) / "reports", self.scanner, timeout=timeout))
             self.assert_code("scanner_requires_absolute_path", lambda: inspect_package(
                 lock, cache, Path(directory) / "reports", "skillspector", timeout=30))
             self.assert_code("inspection_unavailable", lambda: inspect_package(
@@ -297,7 +316,7 @@ class InspectionTests(unittest.TestCase):
             fetched = fetch_package(lock, cache, download=download)
             with patch("agent_skills_exchange.inspection.run_tool") as run:
                 self.assert_code("inspection_bytecode_not_supported", lambda: inspect_package(
-                    lock, cache, Path(directory) / "reports", sys.executable, timeout=30))
+                    lock, cache, Path(directory) / "reports", self.scanner, timeout=30))
                 run.assert_not_called()
             self.assertTrue((Path(fetched["content"]) / "__pycache__/fixture.pyc").exists())
 
@@ -307,7 +326,7 @@ class InspectionTests(unittest.TestCase):
             with patch("agent_skills_exchange.inspection.run_tool",
                        self.runner(lock, exit_code=2)):
                 result = inspect_package(lock, cache, Path(directory) / "reports",
-                                         sys.executable, timeout=30)
+                                         self.scanner, timeout=30)
             self.assertEqual(result["error"], "inspection_execution_failed")
             self.assertFalse(result["inspection_passed"])
 
@@ -321,7 +340,7 @@ class InspectionTests(unittest.TestCase):
                        self.runner(lock, score=76)), redirect_stdout(output):
                 status = main(["inspect", "--lock", str(lockfile), "--cache", str(cache),
                                "--reports", str(Path(directory) / "reports"),
-                               "--scanner", sys.executable, "--timeout", "30"])
+                               "--scanner", self.scanner, "--timeout", "30"])
             self.assertEqual(status, 2)
             result = json.loads(output.getvalue())
             self.assertFalse(result["inspection_passed"])
